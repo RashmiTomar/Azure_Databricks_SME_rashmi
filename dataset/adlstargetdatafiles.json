@@ -1,0 +1,19 @@
+{
+	"name": "adlstargetdatafiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "rawdata",
+				"fileSystem": "tokyodata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

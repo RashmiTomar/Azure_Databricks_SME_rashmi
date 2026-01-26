@@ -1,0 +1,17 @@
+{
+	"name": "selfhostedruntime",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users\\tomra\\Downloads\\raw\\raw",
+			"userId": "tomra",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyODk1YWZiMi01YTQwLTRlY2MtYjhhOS05ODliMmIzNmVkY2IiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedompremdataIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "targetfiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "targetdata",
+				"fileSystem": "tokyodata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

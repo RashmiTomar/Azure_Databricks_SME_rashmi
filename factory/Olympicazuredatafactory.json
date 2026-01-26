@@ -1,0 +1,9 @@
+{
+	"name": "Olympicazuredatafactory",
+	"location": "canadaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "42c99293-c6ec-40bd-8f2f-ba292b9ea963",
+		"tenantId": "fedb34f2-0e28-446f-8443-805a956d6d5d"
+	}
+}

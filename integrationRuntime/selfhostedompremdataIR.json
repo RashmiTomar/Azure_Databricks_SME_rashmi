@@ -1,0 +1,9 @@
+{
+	"name": "selfhostedompremdataIR",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": true
+		}
+	}
+}
