@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Olympicazuredatafactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"selfhostedruntime_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://olympicdatastorerashmi.dfs.core.windows.net/"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "0912-213551-k7lffbj1"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "practice-sql-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "practicedb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "rusk"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "practice-sql-five-sources.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "practice_db_five"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"selfhostedruntime_properties_typeProperties_host": {
+			"value": "C:\\Users\\tomra\\Downloads\\raw\\raw"
+		},
+		"selfhostedruntime_properties_typeProperties_userId": {
+			"value": "tomra"
+		}
+	}
+}
