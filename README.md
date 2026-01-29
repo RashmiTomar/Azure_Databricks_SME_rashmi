@@ -83,7 +83,29 @@ Azure Data Engineer | Databricks & ADF Specialist
 This repository is intended for:
 - Hiring Managers & Technical Interviewers  
 - Senior / Lead Data Engineers  
-- Architects evaluating Azure data platform designs  
+- Architects evaluating Azure data platform designs
+
+- azure-metadata-driven-ingestion/
+│
+├── adf/
+│   ├── pipelines/
+│   ├── datasets/
+│   └── linked-services/
+│
+├── databricks/
+│   ├── bronze/
+│   ├── silver/
+│   ├── gold/
+│   └── utilities/
+│
+├── metadata/
+│   ├── ingestion-config/
+│   └── schema-definitions/
+│
+└── monitoring/
+    ├── log-analytics/
+    └── alerting/
+
 
 This is **not a tutorial repository**.  
 It represents **production-oriented Azure data engineering practices**.
