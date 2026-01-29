@@ -1,87 +1,92 @@
-Azure Subject Matter Expert
-Enterprise Data Engineering on Microsoft Azure
+# Azure Subject Matter Expert  
+## Enterprise Data Engineering on Microsoft Azure
 
-This repository showcases real-world, production-grade Azure Data Engineering solutions designed and implemented using Azure Databricks, PySpark, Azure Data Factory (ADF), and Delta Lake.
+This repository showcases **real-world, production-grade Azure Data Engineering solutions** designed and implemented using **Azure Databricks, PySpark, Azure Data Factory (ADF), and Delta Lake, Unity catalogue**.
 
-It reflects my hands-on experience building scalable, reliable, and metadata-driven data platforms for large, complex enterprise environments.
+It reflects hands-on experience building **scalable, reliable, and metadata-driven data platforms** for large, complex enterprise environments.
 
-🔹 Core Focus Areas
+---
 
-Metadata-Driven Data Ingestion Frameworks
+## 🔹 Core Focus Areas
 
-Medallion Architecture (Bronze → Silver → Gold)
+- Metadata-Driven Data Ingestion Frameworks  
+- Medallion Architecture (Bronze → Silver → Gold)  
+- Batch & Streaming Pipelines  
+- Enterprise-grade Monitoring, Alerting & Error Handling  
+- Secure, Governed Data Platforms on Azure  
 
-Batch & Streaming Pipelines
+---
 
-Enterprise-grade Monitoring, Alerting & Error Handling
+## 🛠️ Technology Stack and my main love expertise area
 
-Secure, Governed Data Platforms on Azure
+### Data Processing & Analytics
+- Azure Databricks  
+- PySpark  
+- Spark SQL  
+- Delta Lake  
 
-🛠️ Technology Stack
-Data Processing & Analytics
+### Orchestration & Automation
+- Azure Data Factory (ADF)  
+- Parameterized & dynamic pipelines  
+- CI/CD-ready pipeline design  
 
-Azure Databricks
+### Storage
+- Azure Data Lake Storage Gen2 (ADLS Gen2)
 
-PySpark
+### Streaming
+- Azure Event Hubs  
+- Structured Streaming  
 
-Spark SQL
+### Monitoring & Observability
+- Azure Monitor  
+- Log Analytics (KQL)
 
-Delta Lake
+### Security & Governance
+- Azure Entra ID (Service Principals)  
+- Azure Key Vault  
+- Databricks Unity Catalog  
+- RBAC & least-privilege access  
 
-Orchestration & Automation
+---
 
-Azure Data Factory (ADF)
+## 🏗️ Architecture Patterns Implemented
 
-Parameterized & Dynamic Pipelines
+- Metadata-driven ingestion using configuration tables  
+- Medallion Architecture (Bronze / Silver / Gold layers)  
+- Schema evolution & schema drift handling  
+- Incremental, CDC-based loads  
+- Idempotent, restart-safe pipelines  
 
-CI/CD-ready pipeline design
+---
 
-Storage
+## 📈 What This Repository Demonstrates
 
-Azure Data Lake Storage Gen2 (ADLS)
+- Designing **enterprise-scale Azure data platforms**  
+- Building **reusable and configurable pipelines**  
+- Handling failures, retries, monitoring, and alerting correctly  
+- Applying best practices used in **banking & large enterprises**
 
-Streaming & Near Real-Time
+---
 
-Azure Event Hubs
+## 👩‍💻 Author
 
-Structured Streaming
+**Rashmi Tomar**  
+Azure Data Engineer | Databricks & ADF Specialist  
 
-Monitoring & Observability
+**Expertise**
+- Azure Databricks & PySpark  
+- Azure Data Factory (ADF)  
+- Delta Lake & Lakehouse Architecture  
+- Metadata-Driven Frameworks  
 
-Azure Monitor
+---
 
-Log Analytics (KQL)
+## ⭐ How to Use This Repository
 
-Centralized pipeline health & alerting
+This repository is intended for:
+- Hiring Managers & Technical Interviewers  
+- Senior / Lead Data Engineers  
+- Architects evaluating Azure data platform designs  
 
-Security & Governance
-
-Azure Entra ID (Service Principals)
-
-Azure Key Vault
-
-Databricks Unity Catalog
-
-RBAC & least-privilege access
-
-🏗️ Architecture Patterns Implemented
-
-Metadata-Driven Ingestion
-
-Config-based pipelines (no hardcoding)
-
-Scalable to hundreds of tables & sources
-
-Medallion Architecture
-
-Bronze: Raw ingestion
-
-Silver: Cleansed & standardized data
-
-Gold: Business-ready, analytics-optimized datasets
-
-Schema Evolution & Drift Handling
-
-Incremental & CDC-based Loads
-
-Idempotent & Restart-safe Pipelines
+This is **not a tutorial repository**.  
+It represents **production-oriented Azure data engineering practices**.
