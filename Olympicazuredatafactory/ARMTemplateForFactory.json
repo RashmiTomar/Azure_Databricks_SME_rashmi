@@ -267,7 +267,7 @@
 						"type": "ForEach",
 						"dependsOn": [
 							{
-								"activity": "Lookup1",
+								"activity": "Metadata_table_set",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -276,7 +276,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
-								"value": "@activity('Lookup1').output.value",
+								"value": "@activity('Get Metadata1').output.value",
 								"type": "Expression"
 							},
 							"isSequential": true,
@@ -308,8 +308,7 @@
 											"exists"
 										],
 										"storeSettings": {
-											"type": "AzureBlobFSReadSettings",
-											"recursive": true,
+											"type": "AzureBlobStorageReadSettings",
 											"enablePartitionDiscovery": false
 										},
 										"formatSettings": {
@@ -387,7 +386,7 @@
 						}
 					},
 					{
-						"name": "Lookup1",
+						"name": "Metadata_table_set",
 						"type": "Lookup",
 						"dependsOn": [],
 						"policy": {
