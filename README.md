@@ -1,9 +1,6 @@
 # Azure Subject Matter Expert  
-## Enterprise Data Engineering on Microsoft Azure
+![Azure SME](https://img.shields.io/badge/Azure-Data%20Engineering-red)
 
-This repository showcases **real-world, production-grade Azure Data Engineering solutions** designed and implemented using **Azure Databricks, PySpark, Azure Data Factory (ADF), and Delta Lake, Unity catalogue**.
-
-It reflects hands-on experience building **scalable, reliable, and metadata-driven data platforms** for large, complex enterprise environments.
 
 ---
 
