@@ -1,1 +1,10 @@
+{
+  "projects": [
+    {
+      "folder": "ENTERPRISE",
+      "projectName": "azure_ssis_demo_first_package",
+      "ispacPath": "artifacts/ispacs/azure_ssis_demo_first_package.ispac"
+    }
+  ]
+}
 
