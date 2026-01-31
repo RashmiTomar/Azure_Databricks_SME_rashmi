@@ -1,0 +1,24 @@
+name: Deploy SSIS ISPACs (Manual)
+
+on:
+  workflow_dispatch:   # manual trigger only
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Debug - list ISPAC files
+        shell: pwsh
+        run: |
+          Write-Host "ISPAC files found:"
+          Get-ChildItem -Path artifacts/ispacs -Filter *.ispac | Select Name
+
+      - name: Debug - show packages.json
+        shell: pwsh
+        run: |
+          Write-Host "packages.json content:"
+          Get-Content deploy/packages.json
