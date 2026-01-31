@@ -1,7 +1,7 @@
 name: Deploy SSIS ISPACs (Manual)
 
 on:
-  workflow_dispatch:   # manual trigger only
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -22,3 +22,26 @@ jobs:
         run: |
           Write-Host "packages.json content:"
           Get-Content deploy/packages.json
+
+      - name: Test Azure SQL connection
+        shell: pwsh
+        env:
+          SQLSERVER: ${{ secrets.SSISDB_SQLSERVER }}
+          SQLUSER: ${{ secrets.SSISDB_SQLUSER }}
+          SQLPASSWORD: ${{ secrets.SSISDB_SQLPASSWORD }}
+        run: |
+          $env:SQLCMDPASSWORD = $env:SQLPASSWORD
+          sqlcmd -S $env:SQLSERVER -d SSISDB -U $env:SQLUSER -C -b -Q "SELECT name FROM catalog.folders;"
+
+      - name: Deploy ISPACs to SSISDB
+        shell: pwsh
+        env:
+          SQLSERVER: ${{ secrets.SSISDB_SQLSERVER }}
+          SQLUSER: ${{ secrets.SSISDB_SQLUSER }}
+          SQLPASSWORD: ${{ secrets.SSISDB_SQLPASSWORD }}
+        run: |
+          ./deploy/deploy-ispac.ps1 `
+            -SqlServer $env:SQLSERVER `
+            -SqlUser $env:SQLUSER `
+            -SqlPassword $env:SQLPASSWORD `
+            -PackagesJsonPath "./deploy/packages.json"
